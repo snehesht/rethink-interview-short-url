@@ -49,3 +49,4 @@ linksRouter.post('/', async (req, res) => {
 })
 
 module.exports = linksRouter;
+module.exports.createShortUrl = createShortUrl;

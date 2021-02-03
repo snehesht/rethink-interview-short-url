@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "lint": "eslint --fix src",
-    "jest": "jest test/**.test.js",
+    "jest": "jest --detectOpenHandles --force-exit test/**.test.js",
     "test": "yarn lint && yarn jest"
   },
   "dependencies": {
@@ -15,11 +15,13 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.4.1",
+    "jest": "^26.6.3",
     "morgan": "^1.10.0",
     "nanoid": "^3.1.20",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.5.0",
+    "superagent": "^6.1.0",
     "validator": "^13.5.2",
     "winston": "^3.3.3"
   },
