@@ -1,5 +1,7 @@
 const db = require('./db');
 const logger = require('../lib/logger');
+const ShortUrls = require('./short-urls');
+const ViewMetrics = require('./views')
 
 const initDatabase = async () => {
   try {
@@ -13,4 +15,6 @@ const initDatabase = async () => {
 module.exports = {
   db,
   initDatabase,
+  ShortUrls,
+  ViewMetrics,
 };
